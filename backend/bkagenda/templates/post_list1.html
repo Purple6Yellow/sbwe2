@@ -1,0 +1,36 @@
+{% extends 'baseblog.html' %}
+
+{% block subtitel %}
+<h2 class="PositieCenter"> Activiteiten van de Barthkapel </h2>
+{% endblock %}
+
+{% block inhoud2 %}
+<!-- ------------------------------------------------ -->
+<div class="row container containerLaag">
+    <div class="col-1">   
+    </div>
+
+    <div class="col-8">
+        {% for post in posts %}
+        <article class="post">
+            <time class="date">
+                <h2> {{ post.datum }}  </h2>
+            </time>
+            <div id="posttitel1">
+                <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }} </a></h2> 
+            </div>
+        </article>
+        {% endfor %} 
+    </div>
+</div>
+<!-- ------------------------------------------------ -->
+{% endblock %}
+
+
+
+
+    
+
+
+
+

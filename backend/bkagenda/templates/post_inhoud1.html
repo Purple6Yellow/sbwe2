@@ -1,0 +1,28 @@
+<!--Post 1 enkele met extra informatie -->
+{% extends 'baseblog.html' %}
+
+{% block subtitle %}
+<p class="font10"> Specificatie </p>
+{% endblock %}
+
+{% block inhoud2 %}
+<div class="row container containerLaag">
+    <div class="col-1">   
+    </div>
+
+    <div class="col-8">
+        <h2>  </h2>
+        <div> <a href="/bkagenda/post_list.html"> terug </a> </div>
+
+        <article class="postInh">
+            {% if post.datum %}
+            <time class="date">
+            {{ post.datum }}
+            </time> 
+            {% endif %} 
+            <h2 id ="posttitel2"> {{ post.title }} </h2>
+            <p id="posttext2"> {{ post.text|linebreaksbr }} </p>       
+        </article>
+    </div>
+</div>
+ {% endblock %}

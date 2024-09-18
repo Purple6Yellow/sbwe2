@@ -1,0 +1,187 @@
+{% extends 'Basis/baseweb1.html'%}
+{% load static %}
+
+{% block inhoud2 %}
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12">  
+        <div class="img-container-bkres">
+            <img class="formaat0" src="{% static 'img/BK/BK3_Groot.jpg' %}"  alt="Barthkapel1"><br>
+            <div class = "img-txt-bkres"> 
+                <div class ="font20B"> Aanvraag Barthkapel  </div>
+                <br>       <br>       <br> 
+                <div class="font9">Wij helpen u graag.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<div class="FormRes">    
+<div class="row">
+    <div class="col-1">
+        <br>
+    </div>
+
+    <div class="col-10">
+        <ol class="font15"> <em> Reservering aanvragen</em> </ol>
+        <ol class="font8"> <br> </ol>
+    </div>
+
+    <div class="col-1">
+        <br>
+    </div>
+</div> 
+<!---------------------------------------------------------------------------------------------------------------------->
+
+<div class="row">    
+
+    <div class="">
+        <br>
+    </div>
+    
+    <div class="col-12">
+        <form action="#" method="#">
+        <div class = "ContainerData2">
+            <TABLE>
+                <TR>
+                    <TD colspan="2">  <em>  Bedrijfsnaam </em> </TD>
+                    <TD> <br> </TD>
+                    <TD>  <em>  Datum  </em> </TD> 
+                    <TD> <em>   Tijdstip reservering</em> </TD>
+                </TR>
+
+                <TR> <!-------Bedrijfsnaam2, data en tijdstip 1------------------------------------------------------>
+                    <TD colspan="2"> <input class="invulA" type ="text" name="BNaam" placeholder="(Bedrijfs)Naam"></TD>
+                    <TD> <br> </TD>  
+                    <TD> <input type ="text" class = "datepicker" name="Data1" placeholder="Data1"> </TD>   
+                    <TD> <input type ="text" class = "timepicker" name="Tijd1" placeholder="Tijdstip1"> </TD>
+                </TR>
+
+                <TR> <!-------Voor & achternaam1, data en tijdstip 2------------------------------------------------------>
+                    <TD colspan="2">  <em>  Voor & achternaam </em> </TD>
+                    <TD> <br> </TD>  
+                    <TD> <input type ="text" class = "datepicker" name="Data2" placeholder="Data2"> </TD>    
+                    <TD> <input type ="text" class = "timepicker" name="Tijd2" placeholder="Tijdstip2"> </TD>    
+                </TR>
+
+                <TR> <!-------Voor & achternaam2, data en tijdstip 3------------------------------------------------------>
+                    <TD colspan="2"> <input class="invulA" type ="text" id="Naam" name="Naam" placeholder="Naam"></TD>
+                    <TD> <br> </TD> 
+                    <TD> <input type ="text" class ="datepicker" name="Data3" placeholder="Data3"> </TD>   
+                    <TD> <input type ="text" class = "timepicker" name="Tijd3" placeholder="Tijdstip3"> </TD>  
+                </TR>
+
+                <TR> <!-------Emailadres1, data en tijdstip 4------------------------------------------------------>
+                    <TD colspan="2">  <em> Email adres </em> </TD>
+                    <TD> <br> </TD> 
+                    <TD> <input type ="text" class ="datepicker"  name="Data4" placeholder="Data4"> </TD>      
+                    <TD> <input type ="text" class = "timepicker" name="Tijd4" placeholder="Tijdstip4"> </TD>     
+                </TR>
+
+                <TR> <!-------Emailadres2, data en tijdstip 5------------------------------------------------------>
+                    <TD colspan="2"> <input class="invulA" type ="text" name="Email" placeholder="Mailadres"></TD>
+                    <TD> <br> </TD> 
+                    <TD> <input type ="text" class ="datepicker" name="Data5" placeholder="Data5"> </TD>   
+                    <TD> <input type ="text" class = "timepicker" name="Tijd5" placeholder="Tijdstip5"> </TD>    
+                </TR>
+            </TABLE>
+        </div>
+        </form>
+    </div>
+
+
+</div>
+<!--------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="row">
+    <div class="col-1">  
+        <ol class="font12"> <br> </ol>
+    </div>
+    
+    <div class="col-10"> 
+        <ul>
+            <ol> <label for="Bericht"> <em> Bericht </em> </label></ol>
+            <ol> <textarea name="bericht" placeholder=""></textarea></ol>
+            <ol>
+                <input type="radio" id="voorwaarden" name="" value="Akkoord"/>
+                <label for ="voorwaarden"> Akkoord met annuleringsvoorwaarden</label>
+            </ol>
+            <ol class="font12"> <br> </ol>
+            <ol> <a href="/CC/voorwaardenBK.html"> Annuleringsvoorwaarden </a> </ol>
+            <ol> <input id="buttonRes" type="submit" value="Verzend"> </ol>
+            <ol class="font12"> <br> </ol>
+        </ul>
+    </div>
+
+    <div class="col-1">  
+        <ol class="font12"> <br> </ol>
+        <ol class="font12"> <br> </ol>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="row">
+    <div class="col-12">  
+        <ol> <br> </ol>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------>
+</div> <!--sluiting FormRes class -->
+<!------------------------------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+<!--PLEK VOOR KALENDER-->
+<!------------------------------------------------------------------------------------------------------------------------>
+<div class = "row">
+    </div><div class="col-1">
+        <br>
+    </div>
+
+    <div class="col-10">
+        <ol class="font20B TxtCenter"> <em> Beschikbaarheid</em> </ol>
+        <div id="calendar"></div>
+        <ol class="font8"> <br> </ol>
+    </div>
+
+    <div class="col-1">
+        <br>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+
+<div class="row">
+    <div class="col-12"> 
+        <ul>
+            <ol> <br> </ol>
+            <ol> <br> </ol>
+        </ul>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------- -->
+ 
+ <!-- Javascript; aanvraagformulier-->
+ <script src="{% static 'js/FormReserveringBK.js' %}"></script>
+ 
+ <!-- Javascript; kalender-->
+ <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.12/index.global.min.js'></script>
+ <script type="module" src="{% static 'js/kalenderzelf.js' %}"></script>
+
+ <!-- Javascript: timepicker-->
+ <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+ <script scr="{% static 'js/timepicker.js'}"></script>
+
+
+
+<!--  Javascript: datepicker  -->
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/datepicker-nl.js' %}"></script>
+<script src="{% static 'js/datepicker_eigen.js' %}"></script>
+
+
+{% endblock %}
+
+{% block footer %}  
+{% endblock %}

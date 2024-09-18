@@ -1,0 +1,53 @@
+{% extends 'baseblog.html' %}
+
+{% block subtitel %}    
+{% endblock %}
+
+{% block inhoud2 %}
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-12"> 
+        <br>
+        <br>
+        <br>
+        <br>  
+        <H2 class ="font20B TxtCenter"> Barthkapel programma  </H2>
+       
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="row">
+    <div class="col-12">
+        {% for post in posts %}
+        <article class="post">
+            <time class="date">
+                <h2> {{ post.datum }}  </h2>
+            </time>
+            <div id="posttitel1">
+                <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }} </a></h2> 
+            </div>
+        </article>
+        {% endfor %} 
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-12"> 
+        <br>
+        <br>
+        <br>
+        <br>  
+        <H2 class ="font20B TxtCenter">  </H2>
+       
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<!---footer informatie is nu leeg ---->
+{% block inhoud3 %}
+{% endblock %}
+
+<!--------------------------------------------------------------------------------------------------------------------- -->
+{% endblock %}

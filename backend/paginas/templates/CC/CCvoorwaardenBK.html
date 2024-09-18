@@ -1,0 +1,58 @@
+{% extends 'basis/baseweb1.html' %}
+{% load static %}
+
+{% block inhoud2 %}
+<!--------------------HEADER--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-contact"> 
+            <!--<img src="{% static 'img/Paginas/Lucht_Header3.jpg'  %}" alt="header-sbwe">  -->    
+            <img src="{% static 'img/Paginas/Algemeen_Header.jpg'  %}" alt="header-sbwe">       
+            <div class = "img-txt-contact font-20B verbergenMobiel"> 
+                Annulering
+            </div>
+        </div> 
+    </div>
+</div>
+<!------->
+<!--sjabloon in basisweb1, wordt volgens mij niet gebruikt, omdat tekst dubbel op pagina komt te staan-->
+{% block txt %}
+{% endblock %}
+<!------->
+<!--------------------EINDE>>HEADER--------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-12"> 
+        <br>
+        <div class ="font-20B TxtCenter"> Voorwaarden voor verhuur </div>
+        <ol class ="font-11 TxtCenter">  <strong> Activiteiten moeten passen binnen de culturele doelstellingen van het Cultureel Centrum Barthkapel. </strong></ol>
+        <br>
+        <br>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12">  
+        <div class = "font-12 Opmaak_Inrichting1">
+        <div class="TxtCenter"> <strong> Annuleringsvoorwaarden. </strong> <br> </div>
+            <ul>
+                <li> Annuleren kan kosteloos tot 7 dagen voor de reservering of eerste verhuurdag.</li>
+                <li> Bij annuleren vanaf 7 dagen tot en met 3 dagen voor de reservering of eerste verhuurdag wordt 50% van de verhuurprijs in rekening gebracht.</li>
+                <li> Bij annuleren op de 2e of de 1e dag voor de reservering of eerste verhuurdag of op de dag zelf wordt het volledige verhuurbedrag in rekening gebracht.</li>
+             
+            </ul>
+        </div>
+    </div>  
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <ol class ="font-11 TxtCenter">
+            <ol> <br> </ol>
+            <strong> <em> Stichting Behoud Waardevol Erfgoed is niet aansprakelijk voor diefstal of schade aan eigendommen van huurders of bezoekers. </em></strong>
+        </ol>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+{% endblock %}
+<!----------------------------------------------------------------------------------------------------------------------------------->

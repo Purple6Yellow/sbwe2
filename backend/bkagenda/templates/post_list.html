@@ -1,0 +1,51 @@
+{% extends 'baseblog.html' %}
+{% load static %}
+
+{% block subtitel %}    
+{% endblock %}
+
+{% block inhoud2 %}
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-contact">      
+            <img src="{%static 'img/paginas/500px BK_Lucht.jpg' %}" alt="">
+            <div class = "img-txt-posts"> 
+                <div class="font20B" >  
+                    <br> <br>   <br> <br>
+                       Barthkapel Programma 
+                </div>
+            </div>
+            
+            <div class="links">
+<!---Speciaal--------------------------------------------------------------------------->
+                {% for post in posts %}
+                <article class="post">
+                    <time class="date">
+                        <h2> {{ post.datum }}  </h2>
+                    </time>
+                    <div id="posttitel1">
+                        <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }} </a></h2> 
+                    </div>
+                </article>
+                {% endfor %} 
+<!---Speciaal---------------------------------------------------------------------------->
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-12"> 
+        <br>
+        <br>
+        <br>
+        <br>  
+        <H2 class ="font20B TxtCenter">  </H2>
+       
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------- -->
+{% endblock %}

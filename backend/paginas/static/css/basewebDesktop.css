@@ -1,0 +1,153 @@
+/* ------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 1900px){
+/*------------------------------------------------------------------------------------------------------  */
+body{
+    width:75%;}
+    
+header{/* nodig voor menu */
+    position: absolute;
+        top:0px;
+        left:0px;
+    z-index:10;
+    max-height:20%;
+    max-width:100%;}
+
+/* ------------------------------ALLE------------------------------------------------------------------------------------------  */
+/* KOLOM/ */
+.row{display:inline-block;
+    width:100%;}
+[class*="col-"]{
+    float: left;
+    padding:0%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-3T {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-4T {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}  /* ---T voor tekst & "" voor foto's ivm Mobile versie----- */
+.col-8T {width: 66.66%;} 
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}   
+
+/* LETTERTYPE */
+[class*="font-"]{
+    font-family: Gill Sans, Gill Sans MT, Calibri, Arial, Helvetica, sans-serif;
+    color: hsla(193, 92%, 15%, 0.882);
+    line-height:2;}
+.font-7{ font-size: 14px;}
+.font-8{ font-size: 16px;}
+.font-9{font-size: 18px;}
+.font-10{ font-size: 20px;}
+.font-11{  font-size: 22px;}
+.font-12{ font-size: 24px;}
+.font-13{ font-size: 26px;}
+.font-14{ font-size: 28px;}
+.font-15{ font-size: 30px;}
+.font-16{ font-size: 32px;}
+.font-17{ font-size: 34px;}
+.font-18{ font-size: 36px;}
+.font-18B{font-size: 36px; font-weight: 900;}
+.font-20{ font-size: 38px;}
+.font-20B{font-size: 38px; font-weight: 750;}
+.font-25{font-size: 50px;}
+/* LETTERTYPE */   
+/* DIVERS/PAGINAS */  
+.TxtCenter{text-align: center;}
+/* DIVERS/PAGINAS */  
+
+/* ---------------------------- ALLE: EINDE-----------------------------------------------------  */
+/*------------------------------MENU------------------------------------------------------------  */
+/* LAPTOP */
+.menuboven {  display:flex;
+    position:absolute;
+        top:10px;}
+.menu1-menu-container{
+    display:flex;}
+
+.menu1-menu-container li ul{
+    display:none;
+    position:absolute; /*werkt*/
+        top:100%;
+        right:40%;
+        transform: translate(0,0%);
+    background-color: hsla(197, 91%, 48%, 0.882);color: white;
+    width:30%; /* breedte van dropdown blok*/
+    height: 300%;
+    border-radius:7%;
+    border: 2px black solid;}
+.menu1-menu-container li:hover ul{display: inline-block;}
+.menu1-menu-container ul{/* weinig te stijlen - = lijst, */
+    width:60%; /* breedte van menu-items */
+    background-color:inherit;
+    position:absolute; /* plaats tov parent (absolute position): relative & static werken niet (gaat menu naar links) */
+        right: 0%;
+        top: 5%;
+    margin-right:0%;
+    padding:0%;}
+.menu1-menu-container li{ /* = menu-items */display:inline-block;
+    list-style-type: none;
+    padding-left:4%;
+    padding-right:0%;
+    padding-top: 2%;}
+.menu1-menu-container a {
+    /* = streep onder de link weghalen */
+    text-decoration: none;
+    color: white;
+    font-size:26px;}
+.menu1-menu-container a:hover {/* = streep onder de link weghalen */
+    color: hwb(38 9% 15%);}
+    
+/* MOBIEL */
+.menu4-menu-container{display:none;}
+/*------------------------------MENU EINDE----------------------------------------------------------------*/
+/* -----------------------------BASISWEB1: ----------------------------------------------------------------*/
+.logo img{ /*Logo */ 
+    clip-path: circle(50%); 
+    width: 5%;
+    position: absolute;
+        top: 2%;
+        left: 5%;
+    z-index: 500;}
+.Ptitel{
+    color: white;
+    position:absolute;
+        top:10%;
+        right: 5%;}
+.lijntje{display: none;}
+/* -----------------------------BASISWEB1: EINDE----------------------------------------------------------  */
+/* -----------------------------INDEX-------------------------------------------------------------------==  */
+#buttonBK{
+    position:absolute;
+        right: 10%;
+        top:50%;
+    transform: translate(0%, 0%);
+    background-color:hsla(193, 92%, 15%, 0.882);
+    color:white;
+    height: 10%;
+    border:solid 2px hsla(193, 92%, 15%, 0.882);
+    border-radius:2%;
+    z-index:300;}
+
+.opmaak-home{
+    position:relative;
+        top:0%;
+        left:5%;
+        transform: translate(0%, -10%); /*horizontaal versus verticaal */
+    width: 90%;
+    vertical-align: middle;
+    background-color:inherit;}
+
+/* MOBIEL */
+.mob-wrapper{display: none;}
+/* -----------------------------INDEX EINDE---------------------------------------------------------------  */
+
+
+/* ------------------------------@MEDIA AFSLUITING-------------------------------------------------------*/
+}
+/*-------------------------------------------------------------------------------------------------------*/

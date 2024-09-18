@@ -1,0 +1,134 @@
+{% extends 'Basis/baseweb1.html' %}
+{% load static %}
+
+
+{% block inhoud2 %}
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-contact">      
+            <img class="formaat0" src="{%static 'img/paginas/BKBuiten2.jpg' %}" alt="">
+            <div class = "img-txt-contact"> 
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="row">
+    <div class="col-12"> 
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class = "col-10"> 
+        <div id="Fotolijst" class ="fotogalerij2">
+
+            <a href="#foto1">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto1_Tbn.jpg" alt="foto1" title="foto1">
+            </a>
+            <a href="#foto2">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto2_Tbn.jpg" alt="foto2">
+            </a>
+        
+            <a href="#foto3">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto3_Tbn.jpg" alt="foto3">
+            </a>
+        
+            <a href="#foto4">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto4_Tbn.jpg" alt="foto4">
+            </a>
+        
+            <a href="#foto5">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto5_Tbn.jpg" alt="foto5">
+            </a>
+        
+            <a href="#foto6">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto6_Tbn.jpg" alt="foto6">
+            </a>
+        
+            <a href="#foto7">
+                <img src="/static/img/HistorieGalerie/Thumbnails/foto7_Tbn.jpg" alt="foto7">
+            </a>
+        </div>
+    </div>
+    <div class = "col-1"> </div>
+    <div class = "col-1"> </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------  --> 
+
+<!-- VERBORGEN GROOT / WORDT ZICHTBAAR ALS OP FOTO WORDT GEKLIKT-->   
+    <div class="popup" id="foto1">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto1.jpg" alt="foto1">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto8" class="vorige">&#8882;</a>
+        <a href="#foto2" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto2">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto2.jpg" alt="foto2">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto1" class="vorige">&#8882;</a>
+        <a href="#foto3" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto3">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto3.jpg" alt="foto3">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto2" class="vorige">&#8882;</a>
+        <a href="#foto4" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto4">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto4.jpg" alt="foto4">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto3" class="vorige">&#8882;</a>
+        <a href="#foto5" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto5">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto5.jpg" alt="foto5">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto3" class="vorige">&#8882;</a>
+        <a href="#foto6" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto6">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto6.jpg" alt="foto6">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto4" class="vorige">&#8882;</a>
+        <a href="#foto7" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto7">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto7.jpg" alt="foto7">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto5" class="vorige">&#8882;</a>
+        <a href="#foto8" class="volgende">&#8883;</a>
+    </div>
+    <div class="popup" id="foto8">
+        <a href="#" class="sluiten">&#215;</a>
+        <img src="/static/img/HistorieGalerie/Galerie/foto8.jpg" alt="foto8">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#foto7" class="vorige">&#8882;</a>
+        <a href="#foto1" class="volgende">&#8883;</a>
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Javascript-->
+    <script src="static/js/historie.js"></script>
+{% endblock %}
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+{% block txt %}
+Historie
+{% endblock %}

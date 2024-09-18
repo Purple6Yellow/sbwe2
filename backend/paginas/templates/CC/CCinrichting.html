@@ -1,0 +1,97 @@
+{% extends 'basis/baseweb1.html' %}
+{% load static %}
+
+{% block inhoud2 %}
+<!--------------------HEADER--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-contact"> 
+            <!--<img src="{% static 'img/Paginas/Lucht_Header3.jpg'  %}" alt="header-sbwe">  -->    
+            <img src="{% static 'img/Paginas/Algemeen_Header.jpg'  %}" alt="header-sbwe">       
+            <div class = "img-txt-contact font-20B verbergenMobiel"> 
+                Praktische info
+            </div>
+        </div> 
+    </div>
+</div>
+<!------->
+<!--sjabloon in basisweb1, wordt volgens mij niet gebruikt, omdat tekst dubbel op pagina komt te staan-->
+{% block txt %}
+{% endblock %}
+<!------->
+<!--------------------EINDE>>HEADER--------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-12"> 
+        <br>
+        <div class ="font-20B TxtCenter"> Inrichting Barthkapel</div>
+        <br>
+        <br>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-6">  
+        <div class = "font-12 Opmaak_Inrichting1">
+        <div class="TxtCenter"> <strong> Gegevens kapel. </strong> <br> </div>
+            <ul>
+                <li>Afmeting: +/- 100 m2</li>
+                <li>Aantal stoelen: 80</li>  
+                <li>Piano te huur (Blüthner)</li> 
+                <li>Twee lange tafels en twee statafels</li>
+                <li>Ruime keuken met inventaris en koelkast</li> 
+            </ul>
+        </div>
+    </div>  
+
+    <div class="col-6">
+        <div class = "Opmaak_Inrichting2">
+        <img src="{% static 'img/Body/BKpiano.jpg' %}" alt="piano">
+        </div>
+    </div>  
+</div>
+<!--------------------------------------------------------------------------------------------------------------------- -->
+<div class="row">
+    <div class="col-12">
+        <div class="Opmaak_Inrichting3"> 
+        <a href = ""> <img class="" src="{% static 'img/Body/BKPlattegrond.png' %}" alt="plattegrond"> </a>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-6">  
+        <div class = "font-12 Opmaak_Inrichting4">
+            <div class="TxtCenter">  <strong> Algemeen </strong> <br> <br> </div>
+            <ul>
+                <li> Verhuurtijden in overleg, maar tot maximaal 23.00 uur.</li>
+                <li> Het gebruik van elektrische en/of versterkte muziek is niet toegestaan.</li>
+                <li> Factuur wordt achteraf per e-mail verstuurd.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-6">  
+        <div class = "font-12 Opmaak_Inrichting4"> 
+            <div class="TxtCenter"><strong> Zaal achterlaten </strong> <br> <br> </div>
+            <ul>
+                <li> Ruimtes moeten veegschoon worden achtergelaten.</li>
+                <li> Stoelen terug op hun vaste plek.</li>
+                <li> Vaatwerk en keuken moeten schoon worden achtergelaten.</li>
+                <li> Aanrechtblad leeg en alle spullen terug in de kast.</li>
+                <li> Vuilniszakken graag in de desbetreffende containers op de brouwersgracht plaatsen.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-6 TxtCenter"><a href="/CC/impressieBK.html"> <em> Geluidsfragement </em>  </a></div>
+    <div class="col-6 TxtCenter"><a href="/CC/CCvoorwaardenBK.html"> <em> Annuleringsvoorwaarden </em>  </a> </div>
+</div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+{% endblock %}
+<!---------------------------------------------------------------------------------------------------------------------------------->

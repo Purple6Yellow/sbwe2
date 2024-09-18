@@ -1,0 +1,484 @@
+/* -----------------------------------------MOBiELE VERSIE--FIRST MOBIEL---------------------------------------------------  */
+
+/* ------------------------------------------------------------------------------------------------------------------------  */
+@media only screen and (min-device-width: 120px){
+/* ----------------------------------------------------------------------------------------------------------------------
+and (max-device-width: 991px){---  */
+/* -----------------------------ALGEMEEN------------------------------------------------------------------------------------  */
+body{
+    background-color: white;
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", Arial, "Helvetica", sans-serif;
+    font-size:15px;
+    line-height: 1.4;
+    color:hsla(193, 92%, 15%, 0.882);;}
+
+header{
+    width:100%;
+    background-color:none;
+    position: absolute;
+        top:0px;
+        left:0px;
+    text-align: center;
+    color: hsla(193, 92%, 15%, 0.882);;
+    z-index:10;
+    max-height:20%;}
+
+section{  
+    width:100%;
+    height:100%;
+    position: absolute;
+        top:2%;
+        bottom:2%;
+        left:0%;}
+
+footer{display:inline-block;
+    position: relative;
+        bottom:0px;
+        left:0px;
+    text-align: center;
+    width:100%;
+    background-color: white;
+    color: hsla(193, 92%, 15%, 0.882);
+    z-index:999;
+    list-style-type: none;
+    text-decoration: none; /* haalt de streep weg */}
+a{
+    text-decoration:none;
+    color: #c7a11b;}
+a:hover{
+    color:hsla(193, 92%, 15%, 0.882);}
+/* -----------------------------ALGEMEEN EIND--------------------------------------------------------------------------------  */
+/* ---------------------------- ALLE------------------------------------------------------------------------------------------  */
+/* KOLOM/ */
+.row{display:inline-block;
+    width:100%;}
+.rowS{
+    width:94%;
+    padding-left:3%;}
+
+[class*="col-"]{
+    float: left;
+    padding:0%;}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {width: 100%;}
+.col-8T{width:80%;}
+.col-4T{width:50%;}
+/* DEVICE ZICHTBAAR */
+.verbergenMobiel{display:none;background-color:inherit;} /*geen beeld bij mobiele versie - css mobiel = none */
+.verbergenLaptop {display:block;background-color: inherit;} /* geen beeld bij laptop versie - css mobiel = zichtbaar */
+/* DEVICE ZICHTBAAR */  
+/* DIVERS/PAGINAS */  
+.TxtCenter{text-align: center;}
+.FloatM{position:relative;top:0%;left:15%;}
+/* DIVERS/PAGINAS */  
+/* WIJDTE */  
+.F100{width:100%;}
+.F80{width:80%;}
+.F50{width:50%;}
+.F100S{ width: 90%;padding-left:.5%;}
+/* WIJDTE */ 
+/*LETTERTYPE */ 
+[class*="font-"]{
+    font-family:inherit;
+    color:hsla(193, 92%, 15%, 0.882);}    
+.font-8{font-size: 8px;}
+.font-9{font-size: 14px;}   /* valt te klein, dus hier aangepast*/
+.font-10{font-size: 10px;}
+.font-11{font-size: 11px;}
+.font-12{font-size: 12px;}
+.font-13{font-size: 13px;}
+.font-14{font-size: 14px;}
+.font-15{font-size: 15px;}
+.font-16{font-size: 16px;}
+.font-17{font-size: 17px;}
+.font-18{font-size: 18px;}
+.font-18B{font-size: 18px; font-weight: 900;}
+.font-19{font-size: 19px;}
+.font-20{font-size: 20px;}
+.font-20B{font-size: 20px;font-weight: 750;}
+.font-25{font-size: 50px;}
+/*LETTERTYPE */ 
+
+/* ---------------------------- ALLE: EINDE----------------------------------------------------------------------------------  */
+/* -----------------------------MENU-----------------------------------------------------------------------------------------  */
+
+.menu1-menu-container{display:none;}
+.menu1-menu-container li ul{display:none;}
+
+/* MOBIEL */
+.menuboven4 {display:flex;
+    position:absolute;
+        top:10px;}
+.menu4-menu-container{display:flex; /*verplaatsing menu icoon */
+    position:absolute;
+        top:2%;
+        right:12%;}
+.menu4-menu-container li ul{   display:none;  /*dropdown popup */
+    background-color: hwb(195 59% 39% / 0.882);
+    opacity:1;
+    width: 200px;
+    height: 200px;
+    border-radius:4%;
+    border: 1px #0f1562 solid;
+    position:absolute;
+    transform:translate(5%, 0);}
+.menu4-menu-container li:hover ul{display: inline-block;}  
+.menu4-menu-container ul{/* weinig te stijlen - = lijst, */
+    margin-right:3%;
+    background-color:inherit;
+    position:absolute; /* plaats tov parent (absolute position): relative & static werken niet (gaat menu naar links) */
+        right: 2%;
+        top: 2%;}
+.menu4-menu-container li{ /* = menu-items */display:list-item;
+    list-style-type: none;
+    margin:5%;  }
+.menu4-menu-container a {/* opmaak home */
+    text-decoration: none; /* haalt de streep weg */ 
+    padding: 0%;
+    font-size: 25px;
+    color: black;
+    position: absolute;}
+.menu4-menu-container a:hover {
+    /* = streep onder de link weghalen */
+    text-decoration: none;
+    color: #d7ad17;}
+.menu4-menu-container li ul a {/*opmaak dropdown */
+    color: white;
+    padding:4%;
+    font-size:20px;
+    font-weight: bold;
+    position: relative;
+        right: 20px;}
+
+/* -----------------------------EIND>>MENU --------------------------------------------------------------------------------  */
+/* -----------------------------BASISWEB1: --------------------------------------------------------------------------------  */
+.logo img{ /*Logo */ 
+    clip-path: circle(50%); 
+    width: 10%;
+    position: absolute;
+        top: 2%;
+        left: 5%;
+    z-index: 500;}
+
+.Ptitel{ /*tekst in header/afbeelding */ /* class:img-txt-... is ook een tekst in header */
+    color: black;
+    position:absolute;
+        top:10%;
+        right: 5%;}
+
+.footnote{text-decoration: none;}
+.lijntje{color:#c7a11b;}
+/* -----------------------------BASISWEB1: EINDE-----------------------------------------------------------------------------  */
+/* -----------------------------INDEX----------------------------------------------------------------------------------------  */
+.img-container-home{
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    max-height:20%;
+    position:relative;
+        transform: translate(0%, -7%); /*horizontaal versus verticaal */;} /*e18-09-24: mobiele versie omhoog, laptop niet */
+
+.img-container-home img{ /*eigenschappen afbeelding - werkt dit?? */
+    width:100%;}
+
+.img-txt-home{ /*verborgen bij mobiele versie*/
+    color:white;
+    width:50%;
+    text-align: center;
+    position: absolute;
+        top: 20%;
+        right: 0%;
+    transform: translate(0%, 0%);
+    z-index:1;}
+/*----*/
+/* ANDERS  */
+.opmaak-home-mob{
+    position:relative;
+        top:0%;
+        left:10%;
+        transform: translate(0%, 0%); /*horizontaal versus verticaal */
+    width: 80%;
+    font-size:15px;
+    background-color: inherit;}
+
+#buttonBK{
+    position:absolute; /*relative: vanaf linkerhoek in zijn rij. Bij absolute, vanaf rechterbovenhoek van beeldscherm */
+        top:16%;
+        right:5%;
+        transform: translate(0%, 0%); /*horizontaal versus verticaal */
+    background-color:hsla(193, 92%, 15%, 0.882);
+    color:white;
+    font-size: 15px;
+    height: 5%;
+    border:solid 2px hsla(193, 92%, 15%, 0.882);
+    border-radius:2%;
+    z-index:300;}
+
+/* ANDERS  */
+/* -----------------------------INDEX EIND-----------------------------------------------------------------------------------  */
+/* -----------------------------OVER SBWE---- -------------------------------------------------------------------------------  */
+.img-container-sbwe{
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    max-height:20%;}
+
+.img-container-sbwe img{ /*eigenschappen afbeelding - werkt dit?? */
+    width:100%;}
+
+.img-txt-sbwe{
+    color:white;
+    text-align: center;
+    position: absolute;
+        top: 15%;
+        right: 0%;
+    transform: translate(0%, 10%);
+    width:50%;
+    height:30%;
+    z-index:1;}
+/*----*/
+.foto1-sbwe{
+    position:relative;
+        top:0%;
+        left:25%;
+    width:50%;
+    clip-path: circle(40%); /* img als rondje weergeven */} 
+
+.foto2-sbwe{
+    display:flex;
+    position:relative;
+        top:0%;
+    width:40%;
+    clip-path: circle(25%); /* img als rondje weergeven */} 
+
+.opmaakSBWE1, .opmaakSBWE2{
+    margin: 0 10% 0 10%;
+    width:80%;
+    padding-top:2%;}
+/* -----------------------------EINDE>>OVER SBWE---------------------------------------------------------------------------  */
+/* ----------------------------- CONTACT-----------------------------------------------------------------------------------  */
+.img-container-contact{
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    max-height:20%;}
+
+.img-container-contact img{ /*eigenschappen afbeelding - werkt dit?? */
+    width:100%;}
+
+.img-txt-contact{
+    color:white;
+    text-align: center;
+    position: absolute;
+        top: 15%;
+        right: 15%;
+    transform: translate(-30%, 10%);
+    z-index:1;}
+/*----*/
+/*-- VERWIJDEREN - WORDT NIET MEER GEBRUIKT---*/
+.tabel-contact{
+    text-decoration:none;}
+.contact a{
+    text-decoration:none;}
+.tabel tr{
+    padding:7%;}
+/*-- VERWIJDEREN - WORDT NIET MEER GEBRUIKT---*/
+/* -----------------------------EIND>> CONTACT-----------------------------------------------------------------------------  */
+/* -----------------------------VERHUURBK --------------------------------------------------------------------------------- */
+.img-container-bkverhuur{
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    max-height:20%;}
+
+.img-container-verhuur img{ /*eigenschappen afbeelding - werkt dit?? */
+    width:100%;}
+
+.img-txt-verhuur{
+    color:white;
+    text-align: center;
+    position: absolute;
+        top: 15%;
+        right: 15%;
+    transform: translate(-30%, 10%);
+    z-index:1;}
+/*----*/
+.opmaak-verhuur-plat{/*opmaak google maps */
+    width: 99%;
+    height:300px;
+    padding-left:.5%;
+    background-color:inherit;
+    text-align: center;
+    vertical-align: middle;
+    margin-left:2%;}
+
+iframe{
+    width:100%;
+    height:100%;}
+/*----*/
+.opmaak-verhuur{/*tekst/inleiding */
+    margin:0 5% 5% 5%;
+    background-color:inherit;}
+/* -----------------------------EINDE>>VERHUURBK ------------------------------------------------------------------------------  */
+/* ----------------------------CC INRICHTING-----------------------------------------------------------------------------------  */
+.Opmaak_Inrichting1{
+    padding-left:20%;
+    padding-right:20%;
+    width: 60%;
+    background-color: inherit;}
+
+.Opmaak_Inrichting2{
+    padding-top:5%;
+    padding-left:20%;
+    padding-right:20%;
+    background-color: inherit;}
+
+.Opmaak_Inrichting3{
+    background-color: inherit;}
+.Opmaak_Inrichting3 img{
+    width:50%;
+    padding-left:25%;
+    padding-top:4%;
+    background-color: inherit;}
+
+.Opmaak_Inrichting4{
+    padding-top:5%;
+    padding-left:10%;
+    padding-right:10%;
+    width: 80%;
+    background-color: inherit;}
+/* ----------------------------EINDE>>CC INRICHTING----------------------------------------------------------------------------  */
+/* -----------------------------PANDEN-----------------------------------------------------------------------------------------  */
+/*--ALGEMEEN--*/
+.img-container-pd{
+    background-attachment: fixed;
+    background-size: cover;}
+
+.img-container-pd img{ /*eigenschappen afbeelding - werkt dit?? */
+    width:100%;}
+
+.img-txt-pd{
+    color:white;
+    text-align: center;
+    position: absolute;
+        top: 15%;
+        right: 15%;
+    transform: translate(-30%, 10%);
+    z-index:1;}
+/*--SPECIFIEK--*/
+/*PAND BARTHKAPEL */
+.img-container-pdbart{
+    width: 100%;
+    position: relative;
+        top:0%;
+        left:0%;
+    transform: translate(0%,0%);}
+.img-txt-pdbart{
+    position: absolute;
+        top: 30%;
+        right: 35%;
+    transform: translate(-30%, 10%);
+    z-index:1;
+    color: white;}
+.opmaak-pdbart a{  
+    text-decoration: none;}
+/*PAND BARTHKAPEL */
+/*PAND LEPELSTR */
+.img-container-lepel{
+    width: 100%;
+    position: relative;
+        top: 0%;
+        left:0%;}
+.img-container-lepel img{
+    width: 100%;
+    transform: translate(0%, -5%);}
+.overflow{
+    overflow: hidden;}
+/*PAND LEPELSTR */
+/*PAND LOOIJER */
+.img-txt-pdpakh{
+    position: absolute;
+        top: 22%;
+        right: 31%;
+    transform: translate(0%, 10%);
+    z-index:1;
+    color: white;}
+.FotoL{
+    height:500px;}
+/*PAND LOOIJER */
+/*PAND PRINSEGRACHT */
+.FotoP{
+    height:300px;}
+/*PAND PRINSEGRACHT */
+/*PAND REMBRANDTSTR */
+/*PAND REMBRANDTSTR */
+/*PAND TUINHUIS */
+.img-container-pdtuin{
+    width: 100%;
+    position: relative;
+        top:0%;
+        left:0%;
+    transform: translate(0%,0%);}
+/*PAND TUINHUIS */
+
+/* ----------------------------EINDE>>PANDEN------------------------------------------------------------------------------------  */
+
+
+/* --------------------------- FOTO GALERIJ-------------------------------------------------------------------------------------  */
+.fotogalerij1 {text-align: center;}
+.fotogalerij1 img {border: 0px solid #00151be1;; border-radius:1%; width:50%;}
+
+.fotogalerij2 {margin-top:1%; margin-left: 5%; background-color: inherit;}
+.fotogalerij2 img {border: 0px solid #00151be1; border-radius:1%; width: 100px; height: 100px;}
+
+.foto-popup:target { display: block; position: fixed; z-index: 999; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.8); text-align: center; }
+.foto-popup img { max-width: 90%; position: relative; top: 50%; transform: translateY(-50%); }
+
+.vorige, .volgende { position: fixed; top: 50%; transform: translateY(-50%); text-decoration: none; color:#c7a11b; font-size: 5em; }
+.vorige:hover, .volgende:hover { color: white; }
+.vorige { left: 20px; }
+.volgende { right: 20px; }
+@media screen and (max-width: 400px) { .vorige, .volgende { font-size: 3em; } }
+
+div.popup { 
+    display: none;}
+    
+div.popup:target {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: fixed; 
+        top: 0; 
+        left: 0; 
+    z-index: 999; 
+    width: 100%; 
+    max-width: 100%;
+    height: 100%; 
+    text-align: center; 
+    background:hwb(192 0% 87%);}
+
+div.popup a.sluiten {
+position: absolute;
+top: 0;
+left: 50%;
+font-size: 3em;
+z-index: 20;
+color: #c7a11b;
+text-decoration: none;}
+
+div.popup a.sluiten:hover {
+color: white;}
+
+div.popup img { 
+max-width: 90%;
+max-height: 90%;}       
+
+.mob-gal{
+    align-items: center;
+    margin-left:10%;}
+/* ---------------------------EINDE>>FOTO GALERIJ--------------------------------------------------------------------------------*/
+
+
+
+/* ----Afsluiting @ media---------------------------------------------------------------------------------------------------  */
+}
+/* --------------------------------------------------------------------------------------------------------------------------  */
