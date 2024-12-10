@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bezoeker statistieken</title>
+    </head>
+<body>    
+    <h1>Bezoeker statistieken</h1>
+
+    <p>Het aantal bezoekers tot nu toe is: {{ total_visitors }}</p>
+    <p>Aantal unieke bezoekers: {{ unique_visitors }}</p>
+    <p>Aantal bezoekers in de laatste 24 uur: {{ visitors_last_24_hours }}</p>
+
+    <br>
+
+    <h1>Laatste Bezoekers</h1>
+    <ul>
+        {% for visitor in visitors %}
+            <li>{{ visitor.ip_address }} bezocht {{ visitor.page }} om {{ visitor.timestamp }} met {{ visitor.user_agent }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

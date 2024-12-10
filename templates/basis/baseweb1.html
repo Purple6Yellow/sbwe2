@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<!---------------------------------- BASIS: HEADER EN FOOTER NIET GEFIXED ------------------------------------------------------------------- -->
+    <head>
+        <title> Stichting Behoud Waardevol Erfgoed</title>
+        <meta charset = "utf-8">
+
+        {% load static %}
+        <!-- Style CSS--> 
+        <link rel="stylesheet" type="text/css" media = "screen" href = "{% static 'css/basewebMobile.css' %}">
+        <link rel="stylesheet" type="text/css" media = "screen" href = "{% static 'css/basewebLaptopK.css' %}">
+        <link rel="stylesheet" type="text/css" media = "screen" href = "{% static 'css/basewebLaptopG.css' %}">
+        <link rel="stylesheet" type="text/css" media = "screen" href = "{% static 'css/basewebDesktop.css' %}">
+
+        <!-- MediaQuery . viewport  (browser weet nu op welke breedte het moet worden afgebeeld)-->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+ 
+        <!-- Javascript           <script src="/static/js/jquery.js"></script>-->
+        <script src = "{% static 'js/jquery.js' %}" type= "text/javascript";></script>
+        <script src = "{% static 'js/jquery.min.js' %}" type= "text/javascript"></script>
+
+
+   
+        <!--     Geeft Cache problemen in Safari --
+        Javascript / Ajax     <script src="{% static 'js/jquery-ui.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        -- Javascript: Timepicker -- 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"> -->
+   
+        <!-- nodig voor de bkagenda - jqeury's in post en blogs-->
+        {% block head %}
+
+        {% endblock %}  
+
+    </head>
+
+    <body>
+<!---------------------------------- ------------------------------------------------------------------------------------------------------------>
+<!-----------------------------------MENU: LAPTOP & DESKTOP VERSIE-------------------------------------------------------------------------------> 
+    <header class = "row">
+        <div class="col-12 menuboven">    
+            <div class= "menu1-menu-container">
+                <ul id = "menu-menu" class="menu">
+                    <li> <a href="/basis/index.html">Home</a> </li> 
+                    <li id="dropdown"> <a href="/Barthkapel.html">Reserveren</a>
+                    <li> <a href="/panden/panden.html" > Panden </a></li> 
+                    <li>  <a href="/overSBWE.html"> SBWE</a></li> 
+                    <li>  <a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+     
+        </div>
+    </header>   
+<!-----------------------------------EINDE>> MENU: LAPTOP & DESKTOP VERSIE-------------------------------------------------------------------------------> 
+<!-----------------------------------MENU: MOBILE VERSIE NIEUW-------------------------------------------------------------------------------> 
+    <header class = "row">
+        <div class="col-12 menuboven4">  
+            <div class= "menu4-menu-container">
+                <ul id = "menu4-menu" class="menu4">
+                    <li id="dropdown4"> <a href="/basis/index.html"><img src="{% static 'img/menu5.png' %}" alt="menu">  </a>
+                        <ul  class="menu4-menu2">
+                            <li> <a href="/Barthkapel.html">Reserveren</a> </li>
+                            <li> <a href="/panden/panden.html" > Panden </a></li> 
+                            <li> <a href="/overSBWE.html"> SBWE</a></li> 
+                            <li> <a href="/contact.html">Contact</a></li>
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>   
+<!-----------------------------------EIND>>MENU: MOBILE VERSIE NIEUW-------------------------------------------------------------------------------> 
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+<section>
+{% block inhoud2 %}
+{% endblock %}
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+{% block inhoud3 %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+<div class = "row">
+    <div class="col-12">   
+        <div class="Ptitel verbergenMobiel">
+        {% block txt %}
+            ..
+        {% endblock %}
+        </div>
+    </div> 
+</div> 
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+<div class = "row">
+    <div class="col-12">   
+        <div class="logo"> 
+           <a href="/basis/index.html">  <img src="{% static 'img/Logo6.jpg' %}" alt="Logo BWE"> </a>
+        </div>
+    </div> 
+</div> 
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+{% block content %}
+{% endblock %}
+
+ <!------------"footer gedeelte" -------------------------- -->
+ {% block footer %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+<footer>
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class = "row lijntje">
+   --------------------------------------------------------------------
+    </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class = "row">
+
+        <div class = "col-2">
+            <br>
+        </div>
+
+        <div class = "col-2 TxtCenter">
+            <br>
+            Stichting Behoud Waardevol Erfgoed 2024
+            <br> <br>
+        </div>
+ 
+
+        <div class="col-4 TxtCenter"> 
+            <a href="https://www.instagram.com/barthkapeldenhaag/" target ="_blank"> <img src = "{% static 'img/Logo_Inst4.jpg' %}" alt="Logo Insta">   </a> 
+            <!-- <a href="https://www.facebook.com/profile.php?id=100007865958510" target="_blank"> <img src = "{% static 'img/Logo_Face4.jpg' %}" alt="Logo Facebook">   </a> -->
+            <a href=" https://www.facebook.com/people/Stichting-Behoud-Waardevol-Erfgoed/pfbid02tbaStwzTmWWQCTicdaWtw7jdGhUpNs272FaWMwrKKBeWToeX99mbSN8xDBMLSkAkl/" target="_blank"> <img src = "{% static 'img/Logo_Face4.jpg' %}" alt="Logo Facebook">   </a> 
+        </div>
+
+        <div class = "col-2 TxtCenter footnote">
+            <br>
+            stichtingbwe@gmail.com
+        </div>
+
+        <div class = "col-2">
+        </div>
+    </div> 
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class = "row">
+    
+    </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+</footer> 
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+{% endblock %}
+<!------------ einde >>>"footer gedeelte" ---------------------------->
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+<script src="{% static 'js/Buttons.js' %}" type = "text/javascript" ></script>
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+{% endblock %}
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+</section>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>

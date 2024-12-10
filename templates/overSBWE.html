@@ -1,0 +1,81 @@
+{% extends 'basis/baseweb1.html' %}
+{% load static %}
+{% block inhoud2 %}
+
+<!--------------------HEADER--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-sbwe"> 
+            <!--<img src="{% static 'img/Paginas/Lucht_Header3.jpg'  %}" alt="header-sbwe">  -->    
+            <img src="{% static 'img/Paginas/BKBuiten5.jpg'  %}" alt="header-sbwe">       
+            <div class = "img-txt-sbwe font-17 verbergenMobiel"> 
+              Het verhaal achter Stichting Behoud Waardevol Erfgoed
+            </div>
+        </div> 
+    </div>
+</div>
+<!------->
+<!--sjabloon in basisweb1, wordt volgens mij niet gebruikt, omdat tekst dubbel op pagina komt te staan-->
+{% block txt %}
+{% endblock %}
+<!------->
+<!--------------------EINDE>>HEADER--------------------------------------------------------------------------------------------------->
+
+<!---------------------MIDDEN--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="verbergenLaptop TxtCenter">
+    Het verhaal achter Stichting Behoud Waardevol Erfgoed
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">   
+        <img class="foto1-sbwe" src="{% static 'img/Paginas/Simon3.jpg' %}" alt="foto1">
+    </div>
+
+    <div class="col-6">     
+        <div class = "font-12 opmaakSBWE1">
+            <p class="TxtCenter"> <strong>Oprichting </strong> </p>
+
+            Begin jaren 90 was een aantal betrokken buurtbewoners bezorgd over het verdwijnen van oude karakteristieke panden in het oude centrum van Den Haag. 
+            Een van hen was Simon Kamper, actief in het buurtoverleg en de krakersbeweging. <br> 
+            Hij richtte in op 18 juni 1992 Stichting Behoud Ongeregeld Goed op, een aantal 
+            maanden later, op 30 oktober 1992, werd de naam, op aanraden van de toenmalige wethouder Peter Noordanus, veranderd in Stichting Behoud Waardevol Erfgoed. 
+            Het huidige bestuurslid Kees Doornenbal is al vanaf het begin betrokken bij de stichting.
+        </div>
+    </div>
+</div>
+<!---->
+<div class="row">
+<div class="col-6">
+    <div class = "font-12 opmaakSBWE2">
+        <p class="TxtCenter"> <strong>Team </strong> </p>
+        SBWE kent een platte organisatiestructuur. Het bestuur bestaat uit vier leden waarvan drie ook uitvoerende werkzaamheden verrichten, zoals onderhoud, 
+        beheer en financiën. 
+    </div>
+    <div class = "font-12 opmaakSBWE2">
+        <p class="TxtCenter"> <strong> Doelstelling </strong> </p>
+        De doelstelling van de stichting is het instandhouden en waarborgen van de oorspronkelijke stedelijke bebouwing te Den Haag en het stimuleren 
+        van de diversiteit van het gebruik van die stedelijke bebouwing. De stichting probeert haar doel onder meer te realiseren door het verwerven, 
+        verbeteren en beheren van erfgoed in de binnenstad.
+    </div>
+</div>
+
+<!--
+<div class="col-6"> 
+
+
+    <div class="OpmmakSBWE_bottom">
+        <p></p>
+        <div class="font-10" style="padding-left: 2%; color: white"> <a href="{% url 'visitors-list' %}">Het aantal bezoekers tot nu toe is: {{ total_visitors }} </a> </div>
+    </div>
+        <img class="foto2-sbwe" src="{% static 'img/HistorieGalerie/Galerie/foto5.jpg' %}" alt="foto2">
+    <div> </div>
+    <<div class="font-9"> <a href="/historie.html"> <em> Fotogalerie </em>  </a> </div>
+    <div class="font-9"> <a href="/historie.html"> <em> Archief / Verleden </em>  </a> </div>
+</div>
+</div>
+-->
+<!---->
+<!--------------------EINDE>>MIDDEN--------------------------------------------------------------------------------------------------------->
+{% endblock %}

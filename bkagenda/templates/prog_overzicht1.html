@@ -1,0 +1,49 @@
+{% extends 'basis/baseweb1.html' %}
+<!------------------- SJABLOON VAN APP PAGINAS--------------------------------------------------------------------------------------------->
+{% load static %}
+{% block inhoud2 %}
+<!--------------------ALLE DEVICES--------------------------------------------------------------------------------------------------->
+<!--------------------HEADER--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-home">    
+            <img src="{% static 'img/Headers/Header_VerhuurBK.jpg'  %}" alt="header-home">       
+            <div class = "img-txt-home font-17 verbergenMobiel"> 
+            </div>
+        </div> 
+    </div>
+</div>
+<!------->
+<!--sjabloon in basisweb1, alleen gebruikt bij panden/ omdat tekst dubbel op pagina komt te staan-->
+{% block txt %}
+{% endblock %}
+<!------->
+<!--------------------EINDE>>HEADER--------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-12"> 
+        <div class ="font-20B TxtCenter"> Barthkapel Programma</div>
+        <hr>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-4"> 
+    </div>
+
+    <div class = "col-8">
+        {% if prog %}
+            Programma nog niet bekend voor publiek
+        {% else %}
+            {% for prog in prog_list %}
+            <article class="post">
+                <div class = "titel">     <a href = "{% url 'Prog-Detail' prog.pk %}"> {{ prog.title }} </a> </div>
+            </article>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------> 
+
+{% endblock %}

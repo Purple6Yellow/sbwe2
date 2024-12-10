@@ -1,0 +1,64 @@
+{% extends 'basis/baseweb1.html' %}
+<!------------------- SJABLOON VAN APP PAGINAS--------------------------------------------------------------------------------------------->
+{% load static %}
+{% block inhoud2 %}
+<!--------------------ALLE DEVICES--------------------------------------------------------------------------------------------------->
+<!--------------------HEADER--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-pd">    
+            <img src="{% static 'img/Headers/Header_VerhuurBK.jpg'  %}" alt="header-home">       
+            <div class = "img-txt-home font-17 verbergenMobiel"> 
+            </div>
+        </div> 
+    </div>
+</div>
+<!------->
+<!--sjabloon in basisweb1, alleen gebruikt bij panden/ omdat tekst dubbel op pagina komt te staan-->
+{% block txt %}
+{% endblock %}
+<!------->
+<!--------------------EINDE>>HEADER--------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-12"> 
+        <div class ="font-20B TxtCenter"> Barthkapel Programma</div>
+        <hr>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-4"> 
+    </div>
+
+    <div class = "col-12">
+            {% for prog in prog_list %}
+<!------------------------------------------------------------------------------------------------------------------------------------>
+            <div class="row">
+            <div class = "prog-opmaak-alles">
+                <center class="col-3"> 
+                    <div style="border-color: black solid 1px">
+                    <a href=" {{ prog.website }}" TARGET = "_blank"> <img src="{{ prog.image.url }}" alt="{{ prog.image_name }}" style="max-width: 200px; max-height: 200px"> </a>
+                    <!--<div class = "font-10">       {{ prog.image_name }} </div>  -->
+                    </div>
+                </center>
+
+                <div class="col-6">
+                    <div class = "prog-opmaak-rechts" >
+                    <div class ="font-12" style="padding-top: 0%; margin-left:0% ; color: black"> {{ prog.datum | date:"l, d F Y" }}</div>
+                    <div class = "font-18" style="color:#c7a11b; padding-left:0%"> <a href=" {{ prog.website }}" TARGET = "_blank">{{ prog.title }}  </a> </div>
+                    <div class = "font-12" style="padding-left:0%; color: black"> van {{ prog.start }} tot {{ prog.end }}  </div>
+                    <hr style="color:#c7a11b">
+                    </div>
+                </div>
+            </div>  
+            </div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+            {% endfor %}
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------> 
+
+
+{% endblock %}

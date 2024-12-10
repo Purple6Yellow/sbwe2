@@ -1,0 +1,58 @@
+{% extends 'basis/baseweb1.html' %}
+<!------------------- SJABLOON VAN APP PAGINAS--------------------------------------------------------------------------------------------->
+{% load static %}
+{% block inhoud2 %}
+<!--------------------ALLE DEVICES--------------------------------------------------------------------------------------------------->
+<!--------------------HEADER--------------------------------------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-12"> 
+        <div class="img-container-home">    
+            <img src="{% static 'img/Headers/Header_VerhuurBK.jpg'  %}" alt="header-home">       
+            <div class = "img-txt-home font-17 verbergenMobiel"> 
+            </div>
+        </div> 
+    </div>
+</div>
+<!------->
+<!--sjabloon in basisweb1, alleen gebruikt bij panden/ omdat tekst dubbel op pagina komt te staan-->
+{% block txt %}
+{% endblock %}
+<!------->
+<!--------------------EINDE>>HEADER--------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <div class="col-12">   
+        <div class="font-10" style="padding-left: 2%"> <a href="{% url 'Prog-Overzicht' %}"> back</a> </div>
+    </div> 
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<center>
+    <div class = "font-20B" style="color:#c7a11b"> {{ prog.title }}  </div >
+    <hr>
+</center>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="row">
+    <center class="col-6"> 
+        <img src="{{ prog.image.url }}" alt="{{ prog.image_name }}" style="max-width: 300px;">
+        <div class = "font-10">       {{ prog.image_name }} </div>  
+    </center>
+
+    <center class="col-6"> 
+        <div class ="font-20B TxtCenter"> {{ prog.datum }}</div>
+        <div class = "font-10"> van {{ prog.start_time }} tot {{ prog.end_time }}  </div>
+    </center>
+
+
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<center class="row">
+    <hr>
+    <div class = "font-10" style = "width:80%; margin-left:0%"> {{ prog.text }} </div>   
+</center>
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+{% endblock %}
